@@ -1,1 +1,0 @@
-print("测试pycharm和github")
