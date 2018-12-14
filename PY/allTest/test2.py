@@ -1,14 +1,6 @@
-class Student(object):
-
-    def __init__(self, name, age):
-        self.__name = name
-        self.__age = age
-
-    def print_age(self):
-       print('%s' % (self.__age))
+def f(x):
+  return x * x
 
 
-
-hello = Student('vill', 15)
-hello.print_age()
-print(hello._Student__name)
+r = map(f, [1, 2, 3, 4, 5, 6, 7, 8, 9])
+print(list(r))
