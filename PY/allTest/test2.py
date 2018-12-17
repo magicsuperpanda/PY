@@ -1,20 +1,6 @@
-class Student(object):
-  count=0
+from enum import Enum
 
-  def __init__(self, name):
-    self.name = name
-    Student.count += 1
+Month = Enum('Month', ('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'))
 
-if Student.count != 0:
-    print('测试失败!')
-else:
-    bart = Student('Bart')
-    if Student.count != 1:
-        print('测试失败!')
-    else:
-        lisa = Student('Bart')
-        if Student.count != 2:
-            print('测试失败!')
-        else:
-            print('Students:', Student.count)
-            print('测试通过!')
+for name, member in Month.__members__.items():
+    print(name, '=>', member, ',', member.value)
