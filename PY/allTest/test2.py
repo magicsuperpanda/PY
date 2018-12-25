@@ -13,8 +13,8 @@ def process_thread(name):
     local_school.student = name
     process_student()
 
-t1 = threading.Thread(target= process_thread, args=('Alice',), name='Thread-A')
-t2 = threading.Thread(target= process_thread, args=('Bob',), name='Thread-B')
+t1 = threading.Thread(target= process_thread, args=('vill',), name='Thread-A')
+t2 = threading.Thread(target= process_thread, args=('sherry',), name='Thread-B')
 t1.start()
 t2.start()
 t1.join()
