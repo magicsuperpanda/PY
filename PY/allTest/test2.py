@@ -15,7 +15,10 @@ def process_thread(name):
 
 t1 = threading.Thread(target= process_thread, args=('vill',), name='Thread-A')
 t2 = threading.Thread(target= process_thread, args=('sherry',), name='Thread-B')
+t3 = threading.Thread(target= process_thread, args=('zed',), name='Thread-C')
 t1.start()
 t2.start()
+t3.start()
 t1.join()
 t2.join()
+t3.join()
