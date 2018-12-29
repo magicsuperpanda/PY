@@ -13,7 +13,7 @@ def process_thread(name):
     local_school.student = name
     process_student()
 
-t1 = threading.Thread(target= process_thread, args=('vill',), name='Thread-A')
+t1 = threading.Thread(target= process_thread, args=('till',), name='Thread-A')
 t2 = threading.Thread(target= process_thread, args=('bat',), name='Thread-B')
 t3 = threading.Thread(target= process_thread, args=('zed',), name='Thread-C')
 t1.start()
