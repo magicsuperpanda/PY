@@ -14,7 +14,7 @@ def process_thread(name):
     process_student()
 
 t1 = threading.Thread(target= process_thread, args=('vill',), name='Thread-A')
-t2 = threading.Thread(target= process_thread, args=('top',), name='Thread-B')
+t2 = threading.Thread(target= process_thread, args=('bat',), name='Thread-B')
 t3 = threading.Thread(target= process_thread, args=('zed',), name='Thread-C')
 t1.start()
 t2.start()
