@@ -13,6 +13,7 @@ def process_thread(name):
     local_school.student = name
     process_student()
 
+#定义
 t1 = threading.Thread(target= process_thread, args=('till',), name='Thread-A')
 t2 = threading.Thread(target= process_thread, args=('bat',), name='Thread-B')
 t3 = threading.Thread(target= process_thread, args=('ze1d',), name='Thread-C')
